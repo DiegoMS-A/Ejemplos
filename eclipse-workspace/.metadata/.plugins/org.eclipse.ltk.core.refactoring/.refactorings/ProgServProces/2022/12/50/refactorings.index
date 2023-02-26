@@ -1,0 +1,14 @@
+1670836944113	Rename type 'Tienda'
+1670837018982	Rename type 'Caja'
+1670837124949	Rename field 'semaforoTienda'
+1670837427962	Rename local variable 'numCaja'
+1670837516814	Rename local variable 'tienda'
+1670837533560	Rename type 'Tienda'
+1670837557369	Rename type 'Caja'
+1670837570523	Rename field 'facturacionCaja'
+1670837936155	Rename field 'semaforoCaja'
+1670837951236	Rename field 'semaforoTienda'
+1670840829285	Rename local variable 'compra'
+1671184026477	Rename field 'cliatizador'
+1671184404835	Move compilation units
+1671184569975	Move compilation unit

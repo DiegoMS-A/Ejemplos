@@ -1,0 +1,8 @@
+
+public class ServidorHilo extends Thread  {
+	
+	private DataInputStream in;
+	private DataOutputStream out;
+	private String nombreCliente;
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;salida_datos&apos; in &apos;TCPCliente.main(...)&apos; to &apos;salidaDatos&apos;&#x0D;&#x0A;- Original project: &apos;EjercicioSocketsTCP&apos;&#x0D;&#x0A;- Original element: &apos;TCPCliente.main(String[]).salida_datos&apos;&#x0D;&#x0A;- Renamed element: &apos;salida_datos&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;salida_datos&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{TCPCliente.java[TCPCliente~main~\[QString;@salida_datos!481!561!498!509!QDataOutputStream;!0!false" name="salidaDatos" references="true" stamp="1675358365367" version="1.0"/>
+</session>

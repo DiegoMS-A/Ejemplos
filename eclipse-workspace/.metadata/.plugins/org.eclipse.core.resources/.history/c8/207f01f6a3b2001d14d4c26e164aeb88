@@ -1,0 +1,39 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.IOException;
+
+public class ServidorHilo extends Thread  {
+	
+	private DataInputStream in;
+	private DataOutputStream out;
+	private String nombreCliente;
+	
+	
+	public ServidorHilo(DataInputStream in, DataOutputStream out, String nombreCliente) {
+		this.in = in;
+		this.out = out;
+		this.nombreCliente = nombreCliente;
+	}
+	
+	public void run() {
+		
+		int opcion;
+		File f = new File("numeros.txt");
+		
+		while(true) {
+			
+			try {
+				opcion = in.readInt();
+				
+				
+				
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

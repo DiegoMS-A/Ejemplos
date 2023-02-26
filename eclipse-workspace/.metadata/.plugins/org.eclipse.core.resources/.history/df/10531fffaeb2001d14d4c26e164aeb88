@@ -1,0 +1,89 @@
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class ServidorHilo extends Thread {
+
+	private DataInputStream in;
+	private DataOutputStream out;
+	private String nombreCliente;
+
+	public ServidorHilo(DataInputStream in, DataOutputStream out, String nombreCliente) {
+		this.in = in;
+		this.out = out;
+		this.nombreCliente = nombreCliente;
+	}
+
+	public void run() {
+
+		int opcion = 0;
+		File f = new File("numeros.txt");
+
+		while (true) {
+
+			try {
+				opcion = in.readInt();
+
+				switch (opcion) {
+				case 1:
+					int numeroAleatorio = in.readInt();
+					escribirNumeroAleatorio(f, numeroAleatorio);
+					System.out.println("Numero: " + numeroAleatorio + " escrito por el cliente " + nombreCliente);
+					out.writeUTF("Numero guardado correctamente");
+					break;
+
+				case 2:
+					ArrayList<String> numeros = leerNumeros(f);
+					break;
+
+				case 3:
+
+					break;
+
+				default:
+					out.writeUTF("Solo numeros del 1 al 3");
+				}
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public synchronized void escribirNumeroAleatorio(File f, int numeroAleatorio) {
+
+		try {
+			FileWriter fw = new FileWriter(f, true);
+			fw.write(nombreCliente + ":" + numeroAleatorio + "\r\n");
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public synchronized ArrayList<String> leerNumeros(File f) throws FileNotFoundException, IOException {
+
+		ArrayList<String> numeros = new ArrayList<String>();
+
+		BufferedReader br = new BufferedReader(new FileReader(f));
+		String linea = "";
+
+		while ((linea = br.readLine()) != null) {
+			
+			
+
+		}
+
+		return numeros;
+
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.util.Scanner;
+
+public class ClienteHilo extends Thread {
+
+	private DataInputStream in;
+	private DataOutputStream out;
+
+	public ClienteHilo(DataInputStream in, DataOutputStream out) {
+		this.in = in;
+		this.out = out;
+	}
+	
+	public void run() {
+		
+		Scanner sc = new Scanner(System.in);
+		int opcion;
+		boolean salir = false;
+		
+		while(!salir) {
+			
+			
+		}
+	}
+
+}

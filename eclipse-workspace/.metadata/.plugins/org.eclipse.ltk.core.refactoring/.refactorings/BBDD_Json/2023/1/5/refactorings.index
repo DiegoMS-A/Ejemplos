@@ -1,0 +1,6 @@
+1675085362612	Delete element
+1675085415892	Rename resource 'products.json'
+1675087153622	Rename local variable 'first_name'
+1675096243772	Rename type 'JsonToDatabase'
+1675096297685	Rename local variable 'mysqlUrl'
+1675096349812	Rename method 'ConnectToDB'

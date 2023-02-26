@@ -1,0 +1,36 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Servidor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			ServerSocket server = new ServerSocket (7777);
+			Socket sc;
+			
+			System.out.println("Servidor iniciado");
+			while(true) {
+				sc = server.accept();
+				DataInputStream in = new DataInputStream(sc.getInputStream());
+				DataOutputStream out = new DataOutputStream(sc.getOutputStream());
+				
+				out.writeUTF("Escribe tu nombre");
+				String nombreCliente = in.readUTF();
+				
+				ServidorHilo hilo = new ServidorHilo(in, out, nombreCliente);
+				hilo.start();
+				
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

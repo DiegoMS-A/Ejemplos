@@ -1,0 +1,15 @@
+1674473903523	Rename field 'frame'
+1674475066538	Rename type 'Menu'
+1674475091791	Rename field 'frameMenu'
+1674478833015	Rename field 'frameMenuAdmin'
+1674482537889	Delete element
+1674482593840	Rename type 'MenuAdministrador'
+1674483611778	Rename type 'MenuAdministrador'
+1674483628681	Rename field 'frameMenuAdmin'
+1674664797479	Rename type 'MenuUsuario'
+1674664843812	Delete element
+1674665192891	Rename local variable 'myLabel'
+1674667001669	Rename compilation unit 'MenuAdministradorBueno.java'
+1674667019591	Rename type 'MenuUsuarios'
+1674667047465	Rename field 'frameMenuUsuario'
+1674667765740	Delete element

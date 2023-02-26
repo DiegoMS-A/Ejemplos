@@ -1,0 +1,37 @@
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import java.awt.FlowLayout;
+import java.awt.BorderLayout;
+import javax.swing.BoxLayout;
+
+public class calculadoraInterface extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public calculadoraInterface() {
+		setLayout(new GridLayout(0, 5, 0, 0));
+		
+		JButton btnNewButton_2 = new JButton("New button");
+		add(btnNewButton_2);
+		
+		JButton btnNewButton_4 = new JButton("New button");
+		add(btnNewButton_4);
+		
+		JButton btnNewButton_3 = new JButton("New button");
+		add(btnNewButton_3);
+		
+		JButton btnNewButton = new JButton("New button");
+		add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		add(btnNewButton_1);
+		
+		JButton btnNewButton_5 = new JButton("New button");
+		add(btnNewButton_5);
+		
+
+	}
+
+}

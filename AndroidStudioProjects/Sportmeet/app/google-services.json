@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "70240260599",
+    "project_id": "sportmeet-3b9ee",
+    "storage_bucket": "sportmeet-3b9ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70240260599:android:3da14870d6393f81cf1ef2",
+        "android_client_info": {
+          "package_name": "com.example.sportmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70240260599-ud1jjl5vg4jp2c82g34bdndnokl2k8ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAH4lbkXwmV-kZC1bgcdOCI8X9wojt-Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70240260599-ud1jjl5vg4jp2c82g34bdndnokl2k8ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70240260599:android:af7785205c4cd798cf1ef2",
+        "android_client_info": {
+          "package_name": "com.sportmeet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70240260599-ud1jjl5vg4jp2c82g34bdndnokl2k8ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAH4lbkXwmV-kZC1bgcdOCI8X9wojt-Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70240260599-ud1jjl5vg4jp2c82g34bdndnokl2k8ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

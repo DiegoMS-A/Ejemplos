@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textPortada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cálculo de IMC"
+        android:textAlignment="center"
+        android:textColor="#8C8C8C"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btt_calcular"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:text="CALCULAR"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_peso" />
+
+    <EditText
+        android:id="@+id/txt_peso"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu peso en kg"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/txt_altura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPortada" />
+
+    <EditText
+        android:id="@+id/txt_altura"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu altura en cm"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPortada" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sexos"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_peso">
+
+        <RadioButton
+            android:id="@+id/radio_masculino"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Masculino"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_femenino"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/imc_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tipopeso_mostrar"
+        app:layout_constraintStart_toStartOf="@+id/tipopeso_mostrar" />
+
+    <ImageView
+        android:id="@+id/image_bajo"
+        android:layout_width="170dp"
+        android:layout_height="197dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897"
+        app:srcCompat="@drawable/bajo"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_normal"
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_obesidad1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_altura"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/normal"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_obesidad1"
+        android:layout_width="161dp"
+        android:layout_height="197dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/obesidad1"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_obesidad2"
+        android:layout_width="166dp"
+        android:layout_height="192dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/obesidad2"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_obesidad3"
+        android:layout_width="162dp"
+        android:layout_height="198dp"
+        android:layout_marginEnd="48dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_obesidad2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/obesidad3"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_sobrepreso"
+        android:layout_width="171dp"
+        android:layout_height="206dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_obesidad1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sobrepeso"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tipopeso_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btt_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

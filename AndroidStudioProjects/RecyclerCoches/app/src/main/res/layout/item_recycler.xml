@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#090000"
+    >
+
+    <ImageView
+        android:id="@+id/imagen_coche_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:src="@android:drawable/ic_menu_agenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/detalles_coche_recycler"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="#090000"
+        android:backgroundTint="#090000"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="VER DETALLES"
+        android:textAlignment="center"
+        android:textColor="#F3EBEB"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_coche_recycler"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nombre_coche_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_coche_recycler"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nombre_coche_recycler"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="#090808"
+        android:backgroundTint="#090808"
+        android:lineSpacingExtra="8sp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F3EBEB"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imagen_coche_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_coche_recycler" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="404dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
